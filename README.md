@@ -1,4 +1,4 @@
-# Local LLM Server
+# Local LLM Server (llama)
 
 A lightweight local LLM server manager using `llama.cpp` (`llama-server`) to run chat and embedding models locally.
 
