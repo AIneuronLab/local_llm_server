@@ -30,6 +30,7 @@ stop_server() {
         kill "$PID" 2>/dev/null || true
     done
 
+    # shellcheck disable=SC2034
     for i in {1..10}; do
         if ! lsof -nP -iTCP:"$PORT" -sTCP:LISTEN >/dev/null 2>&1; then
             echo "$NAME server stopped."
