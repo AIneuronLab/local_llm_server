@@ -146,7 +146,7 @@ echo "Starting CHAT SERVER..."
 LLM_API_KEY="$LLM_API_KEY" nohup llama-server \
     --model "$CHAT_MODEL" \
     --alias local-llm \
-    --host 0.0.0.0 \
+    --host 127.0.0.1 \
     --port "$CHAT_PORT" \
     --n-gpu-layers 99 \
     --parallel "$CHAT_PARALLEL" \
@@ -205,7 +205,7 @@ echo "Starting EMBEDDING SERVER..."
 LLM_API_KEY="$LLM_API_KEY" nohup llama-server \
     --model "$EMBED_MODEL" \
     --alias local-embed \
-    --host 0.0.0.0 \
+    --host 127.0.0.1 \
     --port "$EMBED_PORT" \
     --n-gpu-layers 99 \
     --embedding \
